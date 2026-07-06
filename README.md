@@ -1,0 +1,1 @@
+# minchala-associates-website
