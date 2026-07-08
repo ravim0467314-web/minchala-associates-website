@@ -1,6 +1,8 @@
 import type { MetadataRoute } from 'next';
 import { articles, checklistLibrary, locationPages, navItems, partners, services, site } from '../lib/content';
 
+export const dynamic = 'force-static';
+
 const partnerSlug = (name: string) => name.toLowerCase().replace(/ca\s+/g, '').replace(/\s+/g, '-');
 
 export default function sitemap(): MetadataRoute.Sitemap {
