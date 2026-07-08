@@ -1,0 +1,14 @@
+GST Return Filing Checklist
+Minchala & Associates, Chartered Accountants
+
+A monthly GST return preparation checklist for outward supplies, ITC review, GSTR-2B matching and portal records.
+
+Checklist
+1. Reconcile outward sales with invoices, credit notes, debit notes and books.
+2. Match input tax credit with GSTR-2B, vendor invoices and books.
+3. Review reverse charge, exempt supplies, nil-rated supplies and advances where applicable.
+4. Check e-invoice, e-way bill and HSN/SAC reporting requirements.
+5. Review GSTR-1 and GSTR-3B values before submission.
+6. Save filed returns, challans, ledgers and reconciliation notes.
+
+Disclaimer: This checklist is general educational guidance only and is not professional advice. Requirements depend on facts, current law, portal records, due dates, notifications and engagement scope. A formal professional engagement begins only after acceptance, independence/conflict checks and document review.
