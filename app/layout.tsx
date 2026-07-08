@@ -1,14 +1,10 @@
 import type { Metadata } from 'next';
-import { Cormorant_Garamond, Inter } from 'next/font/google';
 import { FloatingWhatsApp } from '../components/FloatingWhatsApp';
 import { Footer } from '../components/Footer';
 import { Header } from '../components/Header';
 import { InstallPrompt } from '../components/InstallPrompt';
 import { faqs, images, offices, services, site } from '../lib/content';
 import './globals.css';
-
-const serif = Cormorant_Garamond({ subsets: ['latin'], variable: '--font-serif', display: 'swap' });
-const sans = Inter({ subsets: ['latin'], variable: '--font-sans', display: 'swap' });
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -61,7 +57,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 
   return (
     <html lang="en-IN">
-      <body className={`${serif.variable} ${sans.variable}`}>
+      <body>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([organizationJsonLd, websiteJsonLd, faqJsonLd, ...localBusinessJsonLd, ...serviceJsonLd]) }} />
         <Header />
         {children}
