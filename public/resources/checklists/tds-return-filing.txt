@@ -1,0 +1,14 @@
+TDS Return Filing Checklist
+Minchala & Associates, Chartered Accountants
+
+A TDS compliance checklist for deductor details, challans, PAN validation, returns and correction tracking.
+
+Checklist
+1. Confirm TAN, deductor details, responsible person and period of return.
+2. Reconcile expense ledgers, salary records and TDS deduction entries.
+3. Verify PAN, section, rate, threshold and lower/nil deduction certificates where applicable.
+4. Match challans, BSR codes, dates and amounts before return preparation.
+5. Review Form 24Q/26Q/27Q/27EQ applicability and validation reports.
+6. Track acknowledgements, defaults, correction statements and Form 16/16A issuance.
+
+Disclaimer: This checklist is general educational guidance only and is not professional advice. Requirements depend on facts, current law, portal records, due dates, notifications and engagement scope. A formal professional engagement begins only after acceptance, independence/conflict checks and document review.
