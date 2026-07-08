@@ -1,0 +1,10 @@
+Minchala & Associates - GST Monthly Reconciliation Guide
+
+General monthly rhythm:
+- Match books with GSTR-1 and GSTR-3B
+- Review GSTR-2B input tax credit
+- Follow up vendor exceptions
+- Document unresolved differences
+- Review e-invoicing and credit note controls
+
+This guide is general information and should be verified against current law and facts.
