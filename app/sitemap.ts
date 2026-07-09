@@ -1,3 +1,5 @@
+export const dynamic = 'force-static';
+
 import type { MetadataRoute } from 'next';
 import { articles, checklistLibrary, locationPages, navItems, partners, services, site } from '../lib/content';
 
