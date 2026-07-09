@@ -11,7 +11,7 @@ export const site = {
   locations: ['Bapatla', 'Guntur', 'Hyderabad'],
   primaryServiceArea: 'Bapatla, Andhra Pradesh',
   businessHours: 'Monday to Saturday, 10:00 AM to 6:00 PM by appointment',
-  serviceKeywords: ['Chartered Accountant Bapatla', 'Chartered Accountant in Bapatla', 'Chartered Accountant near Bapatla', 'CA Bapatla', 'CA near me', 'Tax Consultant Bapatla', 'Income Tax Consultant Bapatla', 'GST Consultant Bapatla', 'GST Registration Bapatla', 'GST Return Filing Bapatla', 'Audit Firm Bapatla', 'Statutory Audit Bapatla', 'Internal Audit Bapatla', 'Bank Audit Bapatla', 'ROC Filing Bapatla', 'MCA Compliance Bapatla', 'Company Registration Bapatla', 'LLP Registration Bapatla', 'Startup Registration Bapatla', 'MSME Consultant Bapatla', 'Professional Tax Consultant Bapatla', 'Accounting Services Bapatla', 'Bookkeeping Services Bapatla', 'TDS Consultant Bapatla', 'Payroll Services Bapatla', 'Financial Advisory Bapatla', 'CA firm Guntur', 'CA firm Hyderabad'],
+  serviceKeywords: ['Chartered Accountant Bapatla', 'Chartered Accountant in Bapatla', 'Chartered Accountant near Bapatla', 'CA Bapatla', 'CA near me', 'Tax Consultant Bapatla', 'Income Tax Consultant Bapatla', 'GST Consultant Bapatla', 'GST Registration Bapatla', 'GST Return Filing Bapatla', 'Audit Firm Bapatla', 'Statutory Audit Bapatla', 'Internal Audit Bapatla', 'Bank Audit Bapatla', 'ROC Filing Bapatla', 'MCA Compliance Bapatla', 'Company Registration Bapatla', 'LLP Registration Bapatla', 'Startup Registration Bapatla', 'MSME Consultant Bapatla', 'PMEGP project report Bapatla', 'Project report consultant Bapatla', 'Professional Tax Consultant Bapatla', 'Accounting Services Bapatla', 'Bookkeeping Services Bapatla', 'TDS Consultant Bapatla', 'Payroll Services Bapatla', 'Financial Advisory Bapatla', 'CA firm Guntur', 'CA firm Hyderabad'],
   tagline: 'Clarity in complexity. Confidence in every decision.',
   intro:
     'Minchala & Associates is a chartered accountancy firm supporting businesses, founders, institutions and families with assurance, taxation, GST, corporate compliance, accounting and advisory coordination across Bapatla, Guntur and Hyderabad.',
@@ -46,6 +46,15 @@ export const images = {
   staffSailasri: { src: '/assets/images/team-sailasri.svg', fallback: '/assets/fallbacks/team-sailasri.svg', alt: 'Sailasri Audit Assistant' },
   staffDinesh: { src: '/assets/images/team-polisetty-venkata-sai-dinesh.svg', fallback: '/assets/fallbacks/team-polisetty-venkata-sai-dinesh.svg', alt: 'Polisetty Venkata Sai Dinesh Tax Analyst' },
   staffKhaleel: { src: '/assets/images/team-khaleel.svg', fallback: '/assets/fallbacks/team-khaleel.svg', alt: 'Khaleel Audit Assistant' },
+  firmLogoPrimary: { src: '/assets/images/firm-logo-primary.svg', fallback: '/assets/fallbacks/firm-logo-primary.svg', alt: 'Approved Minchala & Associates primary logo asset' },
+  firmLogoMark: { src: '/assets/images/firm-logo-mark.svg', fallback: '/assets/fallbacks/firm-logo-mark.svg', alt: 'Approved Minchala & Associates logo mark asset' },
+  firmHero: { src: '/assets/images/firm-hero.svg', fallback: '/assets/fallbacks/firm-hero.svg', alt: 'Approved premium firm hero visual' },
+  professionalServiceSuite: { src: '/assets/images/professional-service-suite.svg', fallback: '/assets/fallbacks/professional-service-suite.svg', alt: 'Approved professional service suite visual' },
+  firmTeam: { src: '/assets/images/firm-team.svg', fallback: '/assets/fallbacks/firm-team.svg', alt: 'Approved firm team visual' },
+  officeBapatlaIllustration: { src: '/assets/images/office-bapatla.svg', fallback: '/assets/fallbacks/office-map-card.svg', alt: 'Approved Bapatla office illustration' },
+  officeGunturIllustration: { src: '/assets/images/office-guntur.svg', fallback: '/assets/fallbacks/office-map-card.svg', alt: 'Approved Guntur office illustration' },
+  officeHyderabadIllustration: { src: '/assets/images/office-hyderabad.svg', fallback: '/assets/fallbacks/office-map-card.svg', alt: 'Approved Hyderabad office illustration' },
+  partnerRavitejaIllustration: { src: '/assets/images/partner-raviteja-minchala.svg', fallback: '/assets/fallbacks/partner-raviteja-minchala.svg', alt: 'Approved Raviteja Minchala partner illustration' },
   premiumMockup: { src: '/assets/images/premium-full-website-mockup.svg', fallback: '/assets/fallbacks/firm-hero.svg', alt: 'Premium full website mockup design reference' },
   corporateHome: { src: '/assets/images/corporate-homepage-design-whatsapp-consultation.svg', fallback: '/assets/fallbacks/firm-hero.svg', alt: 'Corporate homepage design with WhatsApp and consultation CTA' },
   socialPreview: { src: '/assets/images/premium-full-website-mockup.svg', fallback: '/assets/images/social-preview.svg', alt: 'Minchala & Associates social preview image' },
@@ -148,11 +157,11 @@ export const services = [
     slug: 'accounting-virtual-cfo',
     title: 'Accounting & Virtual CFO',
     summary: 'Books review, MIS preparation, budget discipline, cash-flow visibility and finance-process improvements for growing organizations.',
-    details: ['Monthly MIS packs', 'Accounting review', 'Budget and variance review', 'Cash-flow reporting', 'Control recommendations'],
+    details: ['Monthly MIS packs', 'Accounting review', 'Budget and variance review', 'Cash-flow reporting', 'MSME / PMEGP project report inputs', 'Control recommendations'],
     outcome: 'Practical finance visibility for responsible management decisions.',
-    localTitle: 'Accounting Services Bapatla, bookkeeping, payroll and virtual CFO support',
-    metaDescription: 'Accounting, bookkeeping, payroll, MIS and virtual CFO coordination for Bapatla businesses seeking better finance visibility and compliance discipline.',
-    keywords: ['Accounting Services Bapatla', 'Bookkeeping Services Bapatla', 'Payroll Services Bapatla', 'Financial Advisory Bapatla', 'MSME Consultant Bapatla'],
+    localTitle: 'Accounting Services Bapatla, bookkeeping, payroll, MSME / PMEGP project reports and virtual CFO support',
+    metaDescription: 'Accounting, bookkeeping, payroll, MSME / PMEGP project report support, MIS and virtual CFO coordination for Bapatla businesses seeking better finance visibility and compliance discipline.',
+    keywords: ['Accounting Services Bapatla', 'Bookkeeping Services Bapatla', 'Payroll Services Bapatla', 'Financial Advisory Bapatla', 'MSME Consultant Bapatla', 'PMEGP project report Bapatla', 'Project report consultant Bapatla'],
     faqs: [
       { question: 'Does the firm provide bookkeeping review in Bapatla?', answer: 'The firm supports bookkeeping review, monthly MIS preparation and accounting hygiene checks based on records and scope.' },
       { question: 'Can payroll compliance be included?', answer: 'Payroll, TDS and statutory compliance workflows can be coordinated where applicable and supported by adequate records.' },
@@ -167,7 +176,7 @@ export const services = [
     outcome: 'Clear professional documentation for lenders, counterparties and internal stakeholders.',
     localTitle: 'Professional certification and transaction support in Bapatla',
     metaDescription: 'Professional certificates, transaction documentation support and diligence schedules for Bapatla clients, subject to records, eligibility and engagement acceptance.',
-    keywords: ['CA Bapatla certificates', 'Financial Advisory Bapatla', 'MSME Consultant Bapatla', 'professional certification Bapatla'],
+    keywords: ['CA Bapatla certificates', 'Financial Advisory Bapatla', 'MSME Consultant Bapatla', 'PMEGP project report Bapatla', 'Project report consultant Bapatla', 'professional certification Bapatla'],
     faqs: [
       { question: 'Can the firm issue certificates for banks or institutions?', answer: 'Professional certificates may be considered after records review, scope definition, eligibility checks and applicable professional requirements.' },
       { question: 'Does the firm support transaction documentation?', answer: 'The firm can assist with diligence schedules and documentation coordination where the facts and records support the scope.' },
@@ -367,9 +376,9 @@ export const checklistLibrary = [
     slug: 'msme-business-compliance',
     title: 'MSME / Business Compliance Checklist',
     category: 'Business Compliance',
-    summary: 'A practical checklist for MSME registration, accounting discipline, GST/TDS, payroll and recurring business compliance.',
+    summary: 'A practical checklist for MSME registration, PMEGP / project-report inputs, accounting discipline, GST/TDS, payroll and recurring business compliance.',
     downloadHref: '/resources/checklists/msme-business-compliance.txt',
-    items: ['Keep Udyam/MSME registration details and business constitution documents updated.', 'Maintain sales, purchases, expenses, bank records and monthly reconciliations.', 'Review GST, TDS, payroll, professional tax and local registration applicability.', 'Track receivables, payables, inventory and statutory dues through a monthly close process.', 'Retain contracts, invoices, purchase orders and compliance acknowledgements.', 'Review compliance calendar and periodic management reports for decision support.'],
+    items: ['Keep Udyam/MSME registration details and business constitution documents updated.', 'Maintain sales, purchases, expenses, bank records and monthly reconciliations.', 'Review GST, TDS, payroll, professional tax, PMEGP / project-report inputs and local registration applicability.', 'Track receivables, payables, inventory and statutory dues through a monthly close process.', 'Retain contracts, invoices, purchase orders and compliance acknowledgements.', 'Review compliance calendar and periodic management reports for decision support.'],
   },
 ] as const;
 
@@ -422,6 +431,31 @@ export const expectedImageUploads = [
   'public/assets/images/social-preview.svg',
 ];
 
+export const approvedVisualAssets = [
+  { title: 'Primary CA-style logo', image: images.logo, usage: 'Header, footer and brand identity' },
+  { title: 'M&A monogram logo', image: images.logoMark, usage: 'Brand mark and fallback identity' },
+  { title: 'Firm logo primary', image: images.firmLogoPrimary, usage: 'Approved logo/brand image' },
+  { title: 'Firm logo mark', image: images.firmLogoMark, usage: 'Approved logo/brand image' },
+  { title: 'Homepage preview layout', image: images.hero, usage: 'Homepage hero visual' },
+  { title: 'Firm hero', image: images.firmHero, usage: 'Approved professional hero visual' },
+  { title: 'Professional service suite', image: images.professionalServiceSuite, usage: 'Services and professional capability visual' },
+  { title: 'Professional office / branding collage', image: images.officeBapatla, usage: 'Bapatla office / brand presentation' },
+  { title: 'Office interior collage', image: images.officeGuntur, usage: 'Services, team and Guntur office visual' },
+  { title: 'Corporate WhatsApp consultation visual', image: images.officeHyderabad, usage: 'Hyderabad coordination and contact CTA visual' },
+  { title: 'Firm team', image: images.firmTeam, usage: 'Approved team visual' },
+  { title: 'Bapatla office illustration', image: images.officeBapatlaIllustration, usage: 'Office section visual' },
+  { title: 'Guntur office illustration', image: images.officeGunturIllustration, usage: 'Office section visual' },
+  { title: 'Hyderabad office illustration', image: images.officeHyderabadIllustration, usage: 'Office section visual' },
+  { title: 'CA Raviteja Minchala profile banner', image: images.partnerRaviteja, usage: 'Partner profile visual' },
+  { title: 'CA Raviteja Minchala illustration', image: images.partnerRavitejaIllustration, usage: 'Approved partner visual' },
+  { title: 'CA Panchagnula Vijaya partner visual', image: images.partnerVijaya, usage: 'Partner profile visual' },
+  { title: 'CA Nakkala Gowtham partner visual', image: images.partnerGowtham, usage: 'Partner profile visual' },
+  { title: 'Sailasri team visual', image: images.staffSailasri, usage: 'Team profile visual' },
+  { title: 'Polisetty Venkata Sai Dinesh team visual', image: images.staffDinesh, usage: 'Team profile visual' },
+  { title: 'Khaleel team visual', image: images.staffKhaleel, usage: 'Team profile visual' },
+  { title: 'Premium full website mockup', image: images.premiumMockup, usage: 'Premium website direction and social preview' },
+  { title: 'Static social preview', image: images.socialPreview, usage: 'Open Graph / Twitter preview fallback' },
+];
 
 export const locationPages = [
   {
