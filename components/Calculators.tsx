@@ -43,7 +43,7 @@ export function Calculators() {
   return (
     <div className="grid gap-6 lg:grid-cols-3">
       <article className="luxury-card rounded-[1.75rem] p-7">
-        <p className="eyebrow text-[#b99655]">GST illustration</p>
+        <p className="eyebrow text-[#b99655]">GST calculator</p>
         <h2 className="display mt-3 text-3xl">Taxable value to GST split</h2>
         <label className="mt-6 block text-sm font-bold text-slate-700" htmlFor="gst-base">Taxable value</label>
         <input id="gst-base" className="field mt-2" inputMode="decimal" value={baseAmount} onChange={(event) => setBaseAmount(event.target.value)} />
@@ -57,7 +57,7 @@ export function Calculators() {
       </article>
 
       <article className="luxury-card rounded-[1.75rem] p-7">
-        <p className="eyebrow text-[#b99655]">TDS illustration</p>
+        <p className="eyebrow text-[#b99655]">TDS calculator</p>
         <h2 className="display mt-3 text-3xl">Gross amount to deduction</h2>
         <label className="mt-6 block text-sm font-bold text-slate-700" htmlFor="tds-base">Gross amount</label>
         <input id="tds-base" className="field mt-2" inputMode="decimal" value={tdsAmount} onChange={(event) => setTdsAmount(event.target.value)} />
@@ -65,7 +65,7 @@ export function Calculators() {
         <input id="tds-rate" className="field mt-2" inputMode="decimal" value={tdsRate} onChange={(event) => setTdsRate(event.target.value)} />
         <dl className="mt-6 space-y-3 text-sm text-slate-600">
           <div className="flex justify-between gap-4"><dt>Estimated deduction</dt><dd className="font-bold text-[#061724]">₹{numberFormatter.format(tds.deduction)}</dd></div>
-          <div className="flex justify-between gap-4"><dt>Illustrative net amount</dt><dd className="font-bold text-[#061724]">₹{numberFormatter.format(tds.net)}</dd></div>
+          <div className="flex justify-between gap-4"><dt>Estimated net amount</dt><dd className="font-bold text-[#061724]">₹{numberFormatter.format(tds.net)}</dd></div>
           <div className="flex justify-between gap-4"><dt>Rate used</dt><dd className="font-bold text-[#061724]">{numberFormatter.format(tds.rate)}%</dd></div>
         </dl>
       </article>

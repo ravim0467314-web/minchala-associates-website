@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { AssetImage } from '../components/AssetImage';
 import { Faq } from '../components/Faq';
 import { ServiceGrid } from '../components/ServiceGrid';
-import { clientSituations, complianceCalendar, firmTimeline, images, industries, insights, locationPages, offices, partners, processSteps, proofPoints, services, site, staffProfiles, teamGroups, values } from '../lib/content';
+import { clientSituations, complianceCalendar, firmTimeline, images, industries, insights, locationPages, offices, partners, processSteps, services, site, staffProfiles, teamGroups, values } from '../lib/content';
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -22,21 +22,22 @@ export default function Home() {
   return (
     <main id="main">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <section className="relative isolate overflow-hidden bg-[#061724] py-20 text-white md:py-28">
-        <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_78%_14%,rgba(208,173,104,.36),transparent_32%),radial-gradient(circle_at_18%_82%,rgba(14,49,68,.88),transparent_38%),linear-gradient(135deg,#061724,#0e3144)]" />
-        <div className="container grid gap-12 lg:grid-cols-[1.02fr_.98fr] lg:items-center">
+      <section className="relative isolate overflow-hidden bg-[#061724] py-16 text-white md:py-24">
+        <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_78%_18%,rgba(208,173,104,.32),transparent_30%),radial-gradient(circle_at_18%_82%,rgba(14,49,68,.88),transparent_38%),linear-gradient(135deg,#061724,#0e3144)]" />
+        <div className="container grid gap-10 lg:grid-cols-[1fr_.9fr] lg:items-center">
           <div className="reveal">
-            <p className="eyebrow text-[#d0ad68]">{site.name}, {site.descriptor} · FRN {site.firmRegistrationNumber}</p>
-            <h1 className="display mt-8 max-w-5xl text-6xl leading-[0.94] tracking-[-0.05em] md:text-8xl">Partner-led chartered accountancy support for <span className="text-[#dfc380]">audit, tax, GST and compliance.</span></h1>
-            <p className="mt-8 max-w-2xl text-lg leading-8 text-white/72">Head office in {site.headOffice} with appointment-based coordination for {site.branchOffices.join(' and ')}. {site.intro}</p>
-            <div className="mt-10 flex flex-wrap gap-4"><Link href="/contact" className="button-primary">Request appointment</Link><a href={`https://wa.me/${site.whatsappNumber.replace(/\D/g, '')}`} className="button-secondary" target="_blank" rel="noopener noreferrer">WhatsApp enquiry</a><Link href="/services" className="button-secondary">Explore services</Link></div>
-            <p className="mt-6 max-w-2xl text-xs leading-6 text-white/48">Local SEO focus: Chartered Accountant near Bapatla, CA in Bapatla, CA near me Bapatla, Tax consultant Bapatla, GST consultant Bapatla, Audit firm Bapatla, Guntur and Hyderabad. {site.complianceLine}</p>
+            <p className="eyebrow text-[#d0ad68]">{site.name}, {site.descriptor}</p>
+            <h1 className="display mt-7 max-w-4xl text-5xl leading-[1.02] tracking-[-0.04em] md:text-7xl">Partner-led chartered accountancy and advisory.</h1>
+            <p className="mt-7 max-w-2xl text-lg leading-8 text-white/74">Supporting businesses, institutions and individuals with audit, taxation, GST, corporate compliance, accounting and advisory coordination from Bapatla, with appointment-based support for Guntur and Hyderabad.</p>
+            <div className="mt-9 flex flex-wrap gap-4"><Link href="/contact" className="button-primary">Request appointment</Link><a href={`https://wa.me/${site.whatsappNumber.replace(/\D/g, '')}`} className="button-secondary" target="_blank" rel="noopener noreferrer">WhatsApp enquiry</a><Link href="/services" className="button-secondary">Explore services</Link></div>
+            <p className="mt-6 max-w-2xl text-xs leading-6 text-white/48">{site.complianceLine}</p>
           </div>
-          <div className="reveal space-y-4">
-            <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-3 shadow-2xl shadow-black/30">
-              <AssetImage {...images.hero} width={1200} height={900} className="h-auto w-full rounded-[1.5rem] object-cover" priority />
+          <div className="reveal">
+            <div className="relative overflow-hidden rounded-[2.25rem] border border-white/10 bg-[#0b2433]/70 p-3 shadow-2xl shadow-black/30">
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_66%_18%,rgba(208,173,104,.28),transparent_34%),linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,0))]" />
+              <AssetImage {...images.partnerRaviteja} width={1200} height={800} className="relative h-auto max-h-[620px] w-full rounded-[1.75rem] object-contain object-bottom" priority />
             </div>
-            <div className="grid grid-cols-3 gap-3 text-center text-xs font-bold uppercase tracking-[0.14em] text-white/70">
+            <div className="mt-4 grid grid-cols-3 gap-3 text-center text-xs font-bold uppercase tracking-[0.14em] text-white/70">
               <span className="rounded-2xl border border-white/10 bg-white/[0.05] p-3">ICAI-compliant</span>
               <span className="rounded-2xl border border-white/10 bg-white/[0.05] p-3">Firm-only contact</span>
               <span className="rounded-2xl border border-white/10 bg-white/[0.05] p-3">By appointment</span>
@@ -45,9 +46,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section-pad bg-white"><div className="container grid gap-5 md:grid-cols-4">{[{ value: site.firmRegistrationNumber, label: 'Firm Registration Number' }, { value: site.headOffice, label: 'Head office' }, { value: site.branchOffices.join(' · '), label: 'Regional positioning' }, { value: partners.length.toString(), label: 'Approved partner profiles' }].map((item) => <article key={item.label} className="luxury-card rounded-[1.75rem] p-7"><strong className="display text-4xl text-[#b99655]">{item.value}</strong><p className="mt-3 text-sm font-bold uppercase tracking-[0.14em] text-slate-500">{item.label}</p></article>)}</div></section>
+      <section className="section-pad bg-white"><div className="container grid gap-5 md:grid-cols-4">{[{ value: site.headOffice, label: 'Head office' }, { value: site.branchOffices.join(' · '), label: 'Regional positioning' }, { value: partners.length.toString(), label: 'Approved partner profiles' }, { value: services.length.toString(), label: 'Integrated service areas' }].map((item) => <article key={item.label} className="luxury-card rounded-[1.75rem] p-7"><strong className="display text-4xl text-[#b99655]">{item.value}</strong><p className="mt-3 text-sm font-bold uppercase tracking-[0.14em] text-slate-500">{item.label}</p></article>)}</div></section>
 
-      <section className="section-pad"><div className="container grid gap-10 lg:grid-cols-[.9fr_1.1fr] lg:items-center"><div><p className="eyebrow text-[#b99655]">Google Business Profile</p><h2 className="section-title">Find Minchala & Associates on Google Maps.</h2><p className="mt-5 leading-8 text-slate-600">Use the Google Business Profile link, directions route and firm-only contact details for appointment-based coordination with the Bapatla head office and Guntur / Hyderabad branches.</p><div className="mt-7 flex flex-wrap gap-3"><a className="button-primary" href={site.googleBusinessProfileHref} target="_blank" rel="noopener noreferrer">View on Google</a><a className="button-secondary !border-slate-300 !text-[#061724]" href={site.directionsHref} target="_blank" rel="noopener noreferrer">Get directions</a><a className="button-secondary !border-slate-300 !text-[#061724]" href={`tel:${site.phone.replace(/\s/g, '')}`}>Click to call</a></div><p className="mt-5 text-sm leading-7 text-slate-500">FRN {site.firmRegistrationNumber} · {site.email} · {site.businessHours}</p></div><div className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-2xl shadow-slate-950/5"><iframe title="Google Maps location for Minchala & Associates" src={site.googleMapsEmbedSrc} className="h-[380px] w-full border-0" loading="lazy" referrerPolicy="no-referrer-when-downgrade" /></div></div></section>
+      <section className="section-pad"><div className="container grid gap-10 lg:grid-cols-[.9fr_1.1fr] lg:items-center"><div><p className="eyebrow text-[#b99655]">Google Business Profile</p><h2 className="section-title">Find Minchala & Associates on Google Maps.</h2><p className="mt-5 leading-8 text-slate-600">Use the Google Business Profile link, directions route and firm-only contact details for appointment-based coordination with the Bapatla head office and Guntur / Hyderabad branches.</p><div className="mt-7 flex flex-wrap gap-3"><a className="button-primary" href={site.googleBusinessProfileHref} target="_blank" rel="noopener noreferrer">View on Google</a><a className="button-secondary !border-slate-300 !text-[#061724]" href={site.directionsHref} target="_blank" rel="noopener noreferrer">Get directions</a><a className="button-secondary !border-slate-300 !text-[#061724]" href={`tel:${site.phone.replace(/\s/g, '')}`}>Click to call</a></div><p className="mt-5 text-sm leading-7 text-slate-500">{site.email} · {site.businessHours}</p></div><div className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-2xl shadow-slate-950/5"><iframe title="Google Maps location for Minchala & Associates" src={site.googleMapsEmbedSrc} className="h-[380px] w-full border-0" loading="lazy" referrerPolicy="no-referrer-when-downgrade" /></div></div></section>
 
       <section className="section-pad bg-[#061724] text-white"><div className="container"><p className="eyebrow text-[#d0ad68]">Office presence</p><h2 className="section-title max-w-4xl">Professional access across Bapatla, Guntur and Hyderabad.</h2><div className="mt-12 grid gap-6 md:grid-cols-3">{offices.map((office) => <article key={office.city} className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.05]"><AssetImage {...office.image} width={900} height={560} className="h-56 w-full object-cover" /><div className="p-7"><p className="text-sm font-bold uppercase tracking-[0.16em] text-[#d0ad68]">{office.region}</p><h3 className="display mt-2 text-4xl">{office.city}</h3><p className="mt-3 text-sm leading-7 text-white/62">{office.focus}</p><a className="mt-5 inline-flex font-bold text-[#d0ad68]" href={office.mapHref} target="_blank" rel="noopener noreferrer">Open map search →</a></div></article>)}</div></div></section>
 

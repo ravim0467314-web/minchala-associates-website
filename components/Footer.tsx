@@ -10,7 +10,7 @@ export function Footer() {
       <div className="container grid gap-10 lg:grid-cols-[1.2fr_.8fr_1fr]">
         <div>
           <AssetImage {...images.logo} width={220} height={54} className="h-12 w-auto max-w-[220px]" />
-          <p className="mt-4 max-w-md text-sm leading-7 text-white/62">{site.descriptor} · FRN {site.firmRegistrationNumber}. Head office: {site.headOffice}. Branch offices: {site.branchOffices.join(' · ')}. Serving businesses, institutions and individuals with assurance, taxation, compliance and advisory support.</p>
+          <p className="mt-4 max-w-md text-sm leading-7 text-white/62">{site.descriptor}. Head office: {site.headOffice}. Branch offices: {site.branchOffices.join(' · ')}. Serving businesses, institutions and individuals with assurance, taxation, compliance and advisory support.</p>
           <p className="mt-4 text-sm leading-7 text-white/62">Email: <a className="text-[#d0ad68]" href={`mailto:${site.email}`}>{site.email}</a><br />Phone / WhatsApp: <a className="text-[#d0ad68]" href={`https://wa.me/${site.whatsappNumber.replace(/\D/g, '')}`}>{site.phone}</a><br />Click to call: <a className="text-[#d0ad68]" href={`tel:${site.phone.replace(/\s/g, '')}`}>{site.phone}</a><br />Hours: {site.businessHours}</p>
         </div>
         <div>
@@ -41,7 +41,7 @@ export function Footer() {
         <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-6"><ContactForm /></div>
       </div>
       <div className="container mt-10 border-t border-white/10 pt-6 text-xs text-white/45">
-        © 2026 {site.name}. FRN {site.firmRegistrationNumber}. All rights reserved. Offices: {site.locations.join(' · ')} · {site.email}
+        © 2026 {site.name}. All rights reserved. Offices: {site.locations.join(' · ')} · {site.email}
       </div>
     </footer>
   );
