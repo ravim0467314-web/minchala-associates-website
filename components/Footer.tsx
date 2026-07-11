@@ -17,6 +17,11 @@ export function Footer() {
           <p className="footer-title">Navigate</p>
           <div className="mt-4 grid gap-2 text-sm text-white/65">
             {navItems.map((item) => <Link key={item.href} href={item.href} className="hover:text-[#d0ad68]">{item.label}</Link>)}
+            <Link href="/privacy-policy" className="hover:text-[#d0ad68]">Privacy Policy</Link>
+            <Link href="/disclaimer" className="hover:text-[#d0ad68]">Disclaimer</Link>
+            <a href="/sitemap.xml" className="hover:text-[#d0ad68]">Sitemap</a>
+            <a href={site.googleBusinessProfileHref} target="_blank" rel="noopener noreferrer" className="hover:text-[#d0ad68]">Google Business Profile</a>
+            <a href={`https://wa.me/${site.whatsappNumber.replace(/\D/g, '')}`} target="_blank" rel="noopener noreferrer" className="hover:text-[#d0ad68]">WhatsApp</a>
           </div>
         </div>
         <div>
