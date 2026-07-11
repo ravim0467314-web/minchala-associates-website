@@ -34,7 +34,7 @@ export const brand = {
 export const images = {
   logo: { src: '/assets/images/ca-style-minchala-logo.svg', fallback: '/assets/fallbacks/firm-logo-primary.svg', alt: 'Minchala & Associates Chartered Accountants logo' },
   logoMark: { src: '/assets/images/ma-monogram-logo.svg', fallback: '/assets/fallbacks/firm-logo-mark.svg', alt: 'Minchala & Associates logo mark' },
-  hero: { src: '/assets/images/homepage-preview-layout.svg', fallback: '/assets/fallbacks/firm-hero.svg', alt: 'Professional chartered accountancy workspace for Minchala & Associates' },
+  hero: { src: '/assets/images/firm-hero.svg', fallback: '/assets/fallbacks/firm-hero.svg', alt: 'Professional chartered accountancy workspace for Minchala & Associates' },
   service: { src: '/assets/images/office-interior-collage.svg', fallback: '/assets/fallbacks/professional-service-suite.svg', alt: 'Audit tax GST compliance and advisory service suite' },
   officeBapatla: { src: '/assets/images/professional-office-building-branding-collage.svg', fallback: '/assets/fallbacks/office-map-card.svg', alt: 'Bapatla office for Minchala & Associates' },
   officeGuntur: { src: '/assets/images/office-interior-collage.svg', fallback: '/assets/fallbacks/office-map-card.svg', alt: 'Guntur office for Minchala & Associates' },
@@ -46,6 +46,8 @@ export const images = {
   staffSailasri: { src: '/assets/images/team-sailasri.svg', fallback: '/assets/fallbacks/team-sailasri.svg', alt: 'Sailasri Audit Assistant' },
   staffDinesh: { src: '/assets/images/team-polisetty-venkata-sai-dinesh.svg', fallback: '/assets/fallbacks/team-polisetty-venkata-sai-dinesh.svg', alt: 'Polisetty Venkata Sai Dinesh Tax Analyst' },
   staffKhaleel: { src: '/assets/images/team-khaleel.svg', fallback: '/assets/fallbacks/team-khaleel.svg', alt: 'Khaleel Audit Assistant' },
+  staffKumar: { src: '/assets/images/firm-logo-mark.svg', fallback: '/assets/fallbacks/firm-logo-mark.svg', alt: 'Kumar Atmakuri GST Consultant professional profile' },
+  staffSyamkumar: { src: '/assets/images/ma-monogram-logo.svg', fallback: '/assets/fallbacks/firm-logo-mark.svg', alt: 'Meesala Syamkumar Audit Staff professional profile' },
   firmLogoPrimary: { src: '/assets/images/firm-logo-primary.svg', fallback: '/assets/fallbacks/firm-logo-primary.svg', alt: 'Approved Minchala & Associates primary logo asset' },
   firmLogoMark: { src: '/assets/images/firm-logo-mark.svg', fallback: '/assets/fallbacks/firm-logo-mark.svg', alt: 'Approved Minchala & Associates logo mark asset' },
   firmHero: { src: '/assets/images/firm-hero.svg', fallback: '/assets/fallbacks/firm-hero.svg', alt: 'Approved premium firm hero visual' },
@@ -55,9 +57,8 @@ export const images = {
   officeGunturIllustration: { src: '/assets/images/office-guntur.svg', fallback: '/assets/fallbacks/office-map-card.svg', alt: 'Approved Guntur office illustration' },
   officeHyderabadIllustration: { src: '/assets/images/office-hyderabad.svg', fallback: '/assets/fallbacks/office-map-card.svg', alt: 'Approved Hyderabad office illustration' },
   partnerRavitejaIllustration: { src: '/assets/images/partner-raviteja-minchala.svg', fallback: '/assets/fallbacks/partner-raviteja-minchala.svg', alt: 'Approved Raviteja Minchala partner illustration' },
-  premiumMockup: { src: '/assets/images/premium-full-website-mockup.svg', fallback: '/assets/fallbacks/firm-hero.svg', alt: 'Premium full website mockup design reference' },
   corporateHome: { src: '/assets/images/corporate-homepage-design-whatsapp-consultation.svg', fallback: '/assets/fallbacks/firm-hero.svg', alt: 'Corporate homepage design with WhatsApp and consultation CTA' },
-  socialPreview: { src: '/assets/images/premium-full-website-mockup.svg', fallback: '/assets/images/social-preview.svg', alt: 'Minchala & Associates social preview image' },
+  socialPreview: { src: '/assets/images/social-card.svg', fallback: '/assets/images/firm-hero.svg', alt: 'Minchala & Associates social sharing image' },
 };
 
 export const navItems = [
@@ -243,9 +244,11 @@ export const partners = [
 ];
 
 export const staffProfiles = [
-  { name: 'Sailasri', role: 'Audit Assistant', bio: 'Supports audit documentation, schedules, reconciliations and engagement workpaper coordination under partner supervision.', image: images.staffSailasri },
-  { name: 'Polisetty Venkata Sai Dinesh', role: 'Tax Analyst', bio: 'Supports tax data review, compliance trackers, notice documentation and analysis workflows under firm review protocols.', image: images.staffDinesh },
-  { name: 'Khaleel', role: 'Audit Assistant', bio: 'Supports assurance schedules, vouching documentation, reconciliations and client record follow-up under professional supervision.', image: images.staffKhaleel },
+  { name: 'Sailasri', role: 'Audit Assistant', bio: 'Supports audit documentation, schedules, reconciliations and engagement workpaper coordination under partner supervision.', summary: ['Audit documentation', 'Schedules and reconciliations', 'Workpaper coordination'], image: images.staffSailasri },
+  { name: 'Polisetty Venkata Sai Dinesh', role: 'Tax Analyst', bio: 'Supports tax data review, compliance trackers, notice documentation and analysis workflows under firm review protocols.', summary: ['Tax data review', 'Compliance trackers', 'Notice documentation'], image: images.staffDinesh },
+  { name: 'Khaleel', role: 'Audit Assistant', bio: 'Supports assurance schedules, vouching documentation, reconciliations and client record follow-up under professional supervision.', summary: ['Assurance schedules', 'Vouching documentation', 'Client record follow-up'], image: images.staffKhaleel },
+  { name: 'Kumar Atmakuri', role: 'GST Consultant', bio: 'Supports GST, ROC / MCA, accounting, bookkeeping and concurrent audit work under partner review using professional documentation tools.', summary: ['Semi-Qualified Chartered Accountant', 'CA Intermediate (Both Groups Cleared)', 'CA Final Pursuing', 'GST Compliance', 'ROC & MCA Compliance', 'Accounting & Bookkeeping', 'Concurrent Audit', 'Tally ERP', 'Microsoft Excel'], image: images.staffKumar },
+  { name: 'Meesala Syamkumar', role: 'Audit Staff', bio: 'Supports audit documentation, concurrent bank audit coordination and financial-record review under partner supervision.', summary: ['B.Com Graduate', 'Audit Support', 'Concurrent Bank Audit', 'Documentation', 'MS Office', 'Banking & Financial Awareness', 'Tally Basics'], image: images.staffSyamkumar },
 ];
 
 export const teamGroups = [
@@ -409,8 +412,6 @@ export const partnerTimelines = [
 export const expectedImageUploads = [
   'public/assets/images/ca-style-minchala-logo.svg',
   'public/assets/images/ma-monogram-logo.svg',
-  'public/assets/images/premium-full-website-mockup.svg',
-  'public/assets/images/homepage-preview-layout.svg',
   'public/assets/images/professional-office-building-branding-collage.svg',
   'public/assets/images/office-interior-collage.svg',
   'public/assets/images/corporate-homepage-design-whatsapp-consultation.svg',
@@ -428,7 +429,7 @@ export const expectedImageUploads = [
   'public/assets/images/team-sailasri.svg',
   'public/assets/images/team-polisetty-venkata-sai-dinesh.svg',
   'public/assets/images/team-khaleel.svg',
-  'public/assets/images/social-preview.svg',
+  'public/assets/images/social-card.svg',
 ];
 
 export const approvedVisualAssets = [
@@ -436,7 +437,6 @@ export const approvedVisualAssets = [
   { title: 'M&A monogram logo', image: images.logoMark, usage: 'Brand mark and fallback identity' },
   { title: 'Firm logo primary', image: images.firmLogoPrimary, usage: 'Approved logo/brand image' },
   { title: 'Firm logo mark', image: images.firmLogoMark, usage: 'Approved logo/brand image' },
-  { title: 'Homepage preview layout', image: images.hero, usage: 'Homepage hero visual' },
   { title: 'Firm hero', image: images.firmHero, usage: 'Approved professional hero visual' },
   { title: 'Professional service suite', image: images.professionalServiceSuite, usage: 'Services and professional capability visual' },
   { title: 'Professional office / branding collage', image: images.officeBapatla, usage: 'Bapatla office / brand presentation' },
@@ -453,8 +453,7 @@ export const approvedVisualAssets = [
   { title: 'Sailasri team visual', image: images.staffSailasri, usage: 'Team profile visual' },
   { title: 'Polisetty Venkata Sai Dinesh team visual', image: images.staffDinesh, usage: 'Team profile visual' },
   { title: 'Khaleel team visual', image: images.staffKhaleel, usage: 'Team profile visual' },
-  { title: 'Premium full website mockup', image: images.premiumMockup, usage: 'Premium website direction and social preview' },
-  { title: 'Static social preview', image: images.socialPreview, usage: 'Open Graph / Twitter preview fallback' },
+  { title: 'Static social card', image: images.socialPreview, usage: 'Open Graph / Twitter sharing image' },
 ];
 
 export const locationPages = [

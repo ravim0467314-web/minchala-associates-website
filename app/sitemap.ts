@@ -6,7 +6,7 @@ import { articles, checklistLibrary, locationPages, navItems, partners, services
 const partnerSlug = (name: string) => name.toLowerCase().replace(/ca\s+/g, '').replace(/\s+/g, '-');
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticRoutes = [...new Set([...navItems.map((item) => item.href), '/careers', '/offices', '/offline'])];
+  const staticRoutes = [...new Set([...navItems.map((item) => item.href), '/careers', '/offices', '/offline', '/privacy-policy', '/disclaimer'])];
   const articleRoutes = articles.map((item) => `/knowledge-hub/${item.slug}`);
   const partnerRoutes = partners.map((item) => `/partners/${partnerSlug(item.name)}`);
   const serviceRoutes = services.map((item) => `/services/${item.slug}`);
