@@ -12,16 +12,16 @@ export function Header() {
         <Link href="/" className="flex min-w-0 items-center gap-3" aria-label={`${site.name} home`}>
           <AssetImage {...images.logo} width={210} height={52} className="h-12 w-auto max-w-[210px]" priority />
         </Link>
-        <nav className="hidden items-center gap-5 xl:flex" aria-label="Primary navigation">
+        <nav className="hidden items-center gap-5 2xl:flex" aria-label="Primary navigation">
           {navItems.map((item) => (
             <Link key={item.href} href={item.href} className="text-[0.72rem] font-bold uppercase tracking-[0.15em] text-slate-700 transition hover:text-[#b99655]">
               {item.label}
             </Link>
           ))}
         </nav>
-        <div className="hidden items-center gap-2 md:flex"><LanguageToggle /><ThemeToggle /><a href={`tel:${site.phone.replace(/\s/g, '')}`} className="rounded-full border border-slate-300 px-5 py-2 text-xs font-bold uppercase tracking-[0.16em] text-[#061724] transition hover:border-[#b99655]">Call</a><a href={`mailto:${site.email}`} className="rounded-full border border-[#b99655] px-5 py-2 text-xs font-bold uppercase tracking-[0.16em] text-[#061724] transition hover:bg-[#b99655]">Enquire</a></div>
+        <div className="hidden items-center gap-2 md:flex"><LanguageToggle /><ThemeToggle /><a href={`tel:${site.phone.replace(/\s/g, '')}`} className="rounded-full border border-slate-300 px-5 py-2 text-xs font-bold uppercase tracking-[0.16em] text-[#061724] transition hover:-translate-y-0.5 hover:border-[#b99655] hover:shadow-lg hover:shadow-slate-950/5">Call</a><a href={`mailto:${site.email}`} className="rounded-full border border-[#b99655] px-5 py-2 text-xs font-bold uppercase tracking-[0.16em] text-[#061724] transition hover:-translate-y-0.5 hover:bg-[#b99655] hover:shadow-lg hover:shadow-[#b99655]/15">Enquire</a></div>
       </div>
-      <nav className="container flex flex-wrap gap-2 pb-3 text-xs font-semibold text-slate-600 xl:hidden" aria-label="Mobile navigation">
+      <nav className="container flex flex-wrap gap-2 pb-3 text-xs font-semibold text-slate-600 2xl:hidden" aria-label="Mobile navigation">
         {navItems.map((item) => <Link key={item.href} href={item.href} className="rounded-full bg-slate-100 px-3 py-2 transition hover:bg-[#f1e4c8]">{item.label}</Link>)}
       </nav>
     </header>
